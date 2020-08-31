@@ -1,2 +1,2 @@
-creds/*
-.terraform/*
+terraform/creds/*
+terraform/.terraform/*

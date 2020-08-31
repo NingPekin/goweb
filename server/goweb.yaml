@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: goweb
+  name: goweb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: goweb
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: goweb
+    spec:
+      containers:
+      - image: ningcerence/goweb:1.0.0
+        name: goweb
+        resources: {}
+        ports:
+          - containerPort: 8090
+            protocol: TCP
+status: {}
